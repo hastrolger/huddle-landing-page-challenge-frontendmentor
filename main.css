@@ -37,6 +37,7 @@ body {
 .hero {
   min-height: 100vh;
   position: relative;
+  --wave--bottom: url('./images/bg-section-top-mobile-1.svg');
 }
 
 .hero__nav {
@@ -65,3 +66,83 @@ body {
   font-weight: 600;
   box-shadow: 0 0 1px;
 }
+
+.hero__main {
+  text-align: center;
+  color: var(--very-dark-cyan-nc);
+}
+
+.hero__title {
+  font-family: var(--poppins);
+}
+
+.hero__paragraph {
+  width: 90%;
+  line-height: 1.5;
+  margin: 16px auto;
+}
+
+.cta {
+  display: inline-block;
+  background-color: var(--pink-pc);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 16px 30px;
+  border-radius: 30px;
+  color: var(--very-pale-blue-nc);
+  margin-top: 16px;
+}
+
+.hero__picture {
+  margin-top: 80px;
+}
+
+.hero__img {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero__numbers {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 100px;
+}
+
+.hero__item {
+  overflow: hidden;
+}
+
+.hero__icon {
+  display: block;
+}
+
+.hero__number {
+  font-size: 60px;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100px;
+}
+
+.wave--bottom {
+  left: 0;
+  bottom: 0;
+  background-image: var(--wave--bottom);
+}
+
+.wave--top {
+  left: 0;
+  top: 0;
+  background-image: var(--wave--top);
+}
+
+/* 5:10 */
