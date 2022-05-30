@@ -145,4 +145,49 @@ body {
   background-image: var(--wave--top);
 }
 
-/* 5:10 */
+.section {
+  background-color: var(--very-pale-blue-nc);
+  --padding-container:  150px 0; 
+}
+
+.section--white {
+  --padding-container:  210px 0; 
+  background-color: #fff;
+  position: relative;
+  --wave--top: url('./images/bg-section-bottom-mobile-1.svg');
+  --wave--bottom: url('./images/bg-section-top-mobile-2.svg');
+}
+
+.section__container { 
+  display: flex;
+  flex-direction: column;
+}
+
+.section__img  {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.section__texts { 
+  margin-top: 50px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: var(--poppins);
+  margin-bottom: 16px;
+}
+
+.question {
+  text-align: center;
+  position: relative;
+  --padding-container: 190px 0 210px;
+  --wave--top: url('./images/bg-section-bottom-mobile-2.svg');
+  --wave--bottom: url('./images/bg-footer-top-mobile.svg');
+}
+
+.footer {
+  background-color: var(--very-dark-cyan-nc);
+}
